@@ -1,0 +1,115 @@
+<br><br><br>
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="panel panel-default panel-table">
+        <div class="panel-heading">
+            <div class="row">
+                <div class="col col-xs-12">
+                    <div class="card card-sm">
+                        <div class="card-body row no-gutters align-items-center">
+                          <div class="col-auto">
+                              <i class="fa fa-search h4 text-body"></i>
+                          </div>
+                            <div class="col">
+                                <input class="form-control form-control-lg form-control-borderless" type="text" placeholder="Insira data inícial" #valorDtIni name="valorDtIni">
+                            </div>
+                            <!--end of col-->
+                            <div class="col">
+                                <input class="form-control form-control-lg form-control-borderless" type="text" placeholder="Insira data final" #valorDtFim name="valorDtFim">
+                            </div>
+                            <div class="col">
+                              <p>Tipo</p>
+                              <select class="form-control form-control-lg form-control-borderless" #valorTipo>
+                                <option value="E">E</option>
+                                <option value="S">S</option>
+                              </select>
+                            </div>
+                          <div class="col-auto">
+                              <button class="btn btn-lg btn-success" type="button" (click)="buscarPeriodo(valorDtIni.value,valorDtFim.value,valorTipo.value)">Buscar</button>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="panel-heading">
+          <div class="row">
+            <div class="col col-xs-12">
+                <div class="card card-sm">
+                    <div class="card-body row no-gutters align-items-center">
+                      <div class="col-auto">
+                          <i class="fa fa-search h4 text-body"></i>
+                      </div>
+                      <!--end of col-->
+                      <div class="col">
+                          <input class="form-control form-control-lg form-control-borderless" type="text" placeholder="Insira uma chave" #valorPesquisa name="valorPesquisa">
+                      </div>
+                      <!--end of col-->
+                      <div class="col-auto">
+                          <button class="btn btn-lg btn-success" type="button" (click)="buscar(valorPesquisa.value)">Buscar</button>
+                      </div>
+                        <!--end of col-->
+                    </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="panel-heading">
+          <div class="col col-xs-12 text-right">
+            <!--<button type="button" class="btn btn-sm btn-primary btn-create">Novo registro</button>-->
+          </div>
+      </div>
+      <br>
+      <div class="panel-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm">
+              <table class="table table-bordered" style="text-align: center;">
+                <thead>
+                  <tr>
+                    <th scope="col">id</th>
+                    <th scope="col">Tipo</th>
+                    <th scope="col">CnpjCpf</th>
+                    <th scope="col">Numero</th>
+                    <th scope="col">Serie</th>
+                    <th scope="col">Modelo</th>
+                    <th scope="col">ValorTotal</th>
+                    <th scope="col">Status</th>
+                    <!--<th scope="col">Acções</th>-->
+                  </tr>
+                </thead>
+                <tbody *ngFor="let doc of docFiscal">
+                  <tr >
+                    <th scope="row">{{doc.id}}</th>
+                    <th scope="row">{{doc.Tipo}}</th>
+                    <th scope="row">{{doc.CnpjCpf}}</th>
+                    <th scope="row">{{doc.Numero}}</th>
+                    <th scope="row">{{doc.Serie}}</th>
+                    <th scope="row">{{doc.Modelo}}</th>
+                    <th scope="row">R$ {{doc.ValorTotal}}</th>
+                    <th scope="row">{{doc.Status}}</th>
+                    <!--<td>
+                      <div class="row">
+                        <div class="col-sm">
+                            <i class="fa fa-edit"></i>
+                        </div>
+                        <div class="col-sm">
+                            <i class="fa fa-trash"></i>
+                        </div>
+                      </div>
+                    </td>-->
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
