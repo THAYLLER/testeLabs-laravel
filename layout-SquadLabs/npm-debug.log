@@ -1,0 +1,86 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '--save-dev',
+1 verbose cli   '@fortawesome/fontawesome-pro' ]
+2 info using npm@3.5.2
+3 info using node@v8.10.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData @fortawesome/fontawesome-pro
+8 silly fetchNamedPackageData @fortawesome/fontawesome-pro
+9 silly mapToRegistry name @fortawesome/fontawesome-pro
+10 silly mapToRegistry scope (from package name) @fortawesome
+11 silly mapToRegistry registry https://npm.fontawesome.com/
+12 silly mapToRegistry uri https://npm.fontawesome.com/@fortawesome%2ffontawesome-pro
+13 verbose request uri https://npm.fontawesome.com/@fortawesome%2ffontawesome-pro
+14 verbose request no auth needed
+15 info attempt registry request try #1 at 13:54:42
+16 verbose request using bearer token for auth
+17 verbose request id ce39c6ea4951a36e
+18 http request GET https://npm.fontawesome.com/@fortawesome%2ffontawesome-pro
+19 http 401 https://npm.fontawesome.com/@fortawesome%2ffontawesome-pro
+20 verbose headers { server: 'Cowboy',
+20 verbose headers   date: 'Mon, 08 Apr 2019 16:54:42 GMT',
+20 verbose headers   'content-length': '0',
+20 verbose headers   'cache-control': 'max-age=0, private, must-revalidate',
+20 verbose headers   'strict-transport-security': 'max-age=31536000; preload; includeSubDomains',
+20 verbose headers   'x-request-id': '2m9os395kree8hgdm00f4qd1' }
+21 silly get cb [ 401,
+21 silly get   { server: 'Cowboy',
+21 silly get     date: 'Mon, 08 Apr 2019 16:54:42 GMT',
+21 silly get     'content-length': '0',
+21 silly get     'cache-control': 'max-age=0, private, must-revalidate',
+21 silly get     'strict-transport-security': 'max-age=31536000; preload; includeSubDomains',
+21 silly get     'x-request-id': '2m9os395kree8hgdm00f4qd1' } ]
+22 silly fetchPackageMetaData Error: 401 Unauthorized
+22 silly fetchPackageMetaData     at makeError (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+22 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:215:9)
+22 silly fetchPackageMetaData     at Request._callback (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+22 silly fetchPackageMetaData     at Request.self.callback (/usr/share/npm/node_modules/request/request.js:198:22)
+22 silly fetchPackageMetaData     at emitTwo (events.js:126:13)
+22 silly fetchPackageMetaData     at Request.emit (events.js:214:7)
+22 silly fetchPackageMetaData     at Request.<anonymous> (/usr/share/npm/node_modules/request/request.js:1082:10)
+22 silly fetchPackageMetaData     at emitOne (events.js:121:20)
+22 silly fetchPackageMetaData     at Request.emit (events.js:211:7)
+22 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (/usr/share/npm/node_modules/request/request.js:1009:12)
+22 silly fetchPackageMetaData  error for @fortawesome/fontawesome-pro { Error: 401 Unauthorized
+22 silly fetchPackageMetaData     at makeError (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+22 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:215:9)
+22 silly fetchPackageMetaData     at Request._callback (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+22 silly fetchPackageMetaData     at Request.self.callback (/usr/share/npm/node_modules/request/request.js:198:22)
+22 silly fetchPackageMetaData     at emitTwo (events.js:126:13)
+22 silly fetchPackageMetaData     at Request.emit (events.js:214:7)
+22 silly fetchPackageMetaData     at Request.<anonymous> (/usr/share/npm/node_modules/request/request.js:1082:10)
+22 silly fetchPackageMetaData     at emitOne (events.js:121:20)
+22 silly fetchPackageMetaData     at Request.emit (events.js:211:7)
+22 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (/usr/share/npm/node_modules/request/request.js:1009:12) statusCode: 401, code: 'E401' }
+23 silly rollbackFailedOptional Starting
+24 silly rollbackFailedOptional Finishing
+25 silly runTopLevelLifecycles Starting
+26 silly runTopLevelLifecycles Finishing
+27 silly install printInstalled
+28 verbose stack Error: 401 Unauthorized
+28 verbose stack     at makeError (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+28 verbose stack     at CachingRegistryClient.<anonymous> (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:215:9)
+28 verbose stack     at Request._callback (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+28 verbose stack     at Request.self.callback (/usr/share/npm/node_modules/request/request.js:198:22)
+28 verbose stack     at emitTwo (events.js:126:13)
+28 verbose stack     at Request.emit (events.js:214:7)
+28 verbose stack     at Request.<anonymous> (/usr/share/npm/node_modules/request/request.js:1082:10)
+28 verbose stack     at emitOne (events.js:121:20)
+28 verbose stack     at Request.emit (events.js:211:7)
+28 verbose stack     at IncomingMessage.<anonymous> (/usr/share/npm/node_modules/request/request.js:1009:12)
+29 verbose statusCode 401
+30 verbose cwd /var/www/html/sandbox/testeSquadLabs-laravel/layout-squadLabs
+31 error Linux 4.15.0-45-generic
+32 error argv "/usr/bin/node" "/usr/bin/npm" "install" "--save-dev" "@fortawesome/fontawesome-pro"
+33 error node v8.10.0
+34 error npm  v3.5.2
+35 error code E401
+36 error 401 Unauthorized
+37 error If you need help, you may report this error at:
+37 error     <https://github.com/npm/npm/issues>
+38 verbose exit [ 1, true ]
