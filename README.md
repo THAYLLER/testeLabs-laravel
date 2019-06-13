@@ -8,7 +8,7 @@ E também um layout básico em angular e bootstrap que irá consumir a api larav
 
 * PHP 5.6 ou superior
 * LARAVEL 5.7 ou superior
-* Angular 8.0 ou superior
+* Angular 8.0 ou superior 
 
 #Passos para inicializar a api e layout para teste
 acesse a pasta  testeSquadLabs-laravel e execute o comando:
